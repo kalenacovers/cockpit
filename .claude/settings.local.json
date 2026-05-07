@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(pnpm install *)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(npx pnpm *)",
+      "Bash(npx pnpm@10.33.4 install)"
     ]
   }
 }
