@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/(auth)/callback/route": "/callback",
+  "/(auth)/register/page": "/register",
+  "/page": "/",
+  "/(auth)/login/page": "/login",
+  "/(app)/setup/page": "/setup",
+  "/(app)/dashboard/page": "/dashboard",
+  "/(app)/aufgaben/page": "/aufgaben",
+  "/(app)/dokumente/page": "/dokumente",
+  "/(app)/mieter/[id]/page": "/mieter/[id]",
+  "/(app)/mieter/page": "/mieter",
+  "/(app)/einstellungen/page": "/einstellungen",
+  "/(app)/wohnungen/new/page": "/wohnungen/new",
+  "/(app)/wohnungen/[id]/page": "/wohnungen/[id]",
+  "/(app)/zahlungen/page": "/zahlungen",
+  "/(app)/wohnungen/page": "/wohnungen"
+}

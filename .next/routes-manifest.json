@@ -1,0 +1,138 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/mieter/[id]",
+      "regex": "^/mieter/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/mieter/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/wohnungen/[id]",
+      "regex": "^/wohnungen/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/wohnungen/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/aufgaben",
+      "regex": "^/aufgaben(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/aufgaben(?:/)?$"
+    },
+    {
+      "page": "/callback",
+      "regex": "^/callback(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/callback(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/dokumente",
+      "regex": "^/dokumente(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dokumente(?:/)?$"
+    },
+    {
+      "page": "/einstellungen",
+      "regex": "^/einstellungen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/einstellungen(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/mieter",
+      "regex": "^/mieter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mieter(?:/)?$"
+    },
+    {
+      "page": "/register",
+      "regex": "^/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register(?:/)?$"
+    },
+    {
+      "page": "/setup",
+      "regex": "^/setup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/setup(?:/)?$"
+    },
+    {
+      "page": "/wohnungen",
+      "regex": "^/wohnungen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/wohnungen(?:/)?$"
+    },
+    {
+      "page": "/wohnungen/new",
+      "regex": "^/wohnungen/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/wohnungen/new(?:/)?$"
+    },
+    {
+      "page": "/zahlungen",
+      "regex": "^/zahlungen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/zahlungen(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}
