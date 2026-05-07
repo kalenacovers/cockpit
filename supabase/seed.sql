@@ -1,0 +1,1 @@
+-- Optional seed file. The MVP does not load demo data into protected pages.
