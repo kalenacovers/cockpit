@@ -59,9 +59,8 @@ export async function signUpAction(
   });
 
   if (error) {
-    console.error("[signUpAction] Supabase error:", error.message, error.status);
     return {
-      message: `Fehler: ${error.message}`,
+      message: "Das Konto konnte nicht erstellt werden. Bitte versuche es erneut.",
     };
   }
 
